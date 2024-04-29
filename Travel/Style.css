@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e0e0e0;
+}
+.login-form {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 450px;
+    background: #afafaf;
+    padding: 20px 30px;
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.1) ;
+}
