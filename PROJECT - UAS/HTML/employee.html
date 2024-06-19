@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karyawan | Dashboard</title>
+    <link rel="stylesheet" href="/CSS/employee.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <span>ADMIN DASHBOARD</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="dashboard.html">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">DASHBOARD</span>
+                </a>
+            </li>
+            <li>
+                <a href="product.html">
+                    <i class="bx bx-shopping-bag"></i>
+                    <span class="nav-item">Produk</span>
+                </a>
+            </li>
+            <li>
+                <a href="orders.html">
+                    <i class="bx bx-food-menu"></i>
+                    <span class="nav-item">Pesanan</span>
+                </a>
+            </li>
+            <li>
+                <a href="employee.html">
+                    <i class='bx bx-user'></i>
+                    <span class="nav-item">Karyawan</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html">
+                    <i class="bx bx-cog"></i>
+                    <span class="nav-item">Setting</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-log-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        
+        
+        <div class="container">
+            <header>
+                <div class="filterEntries">
+                    <div class="entries">
+                        <h2>Daftar Karyawan</h2> <br>
+                        <select name="" id="table_size">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        </select> Data
+                    </div>
+                    <div class="filter">
+                        <label for="search">Cari Data Karyawan:</label>
+                        <input type="search" name="" id="search" placeholder="Enter nama/kota/phone">
+                    </div>
+                </div>
+                <div class="addMemberBtn">
+                    <button>+ Add New</button>
+                </div>
+
+            </header>
+
+            <table>
+                <thead>
+                    <tr class="heading">
+                        <th>Profile</th>
+                        <th>Nama</th>
+                        <th>Usia</th>
+                        <th>Kota</th>
+                        <th>Posisi</th>
+                        <th>Gaji</th>
+                        <th>Email</th>
+                        <th>Kode</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+    
+                <tbody class="userInfo">
+                    <tr>
+                        <td><img src="/Assets/1.jpg" alt="" width="40" height="40"></td>
+                        <td>Arafian Hafiz</td>
+                        <td>19</td>
+                        <td>Kawali</td>
+                        <td>FullStack Developer</td>
+                        <td>$25000</td>
+                        <td>Arafiangmail.com</td>
+                        <td>12461227</td>
+                        <td>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/Assets/2.jpg" alt="" width="40" height="40"></td>
+                        <td>Rizky Ikhsan</td>
+                        <td>19</td>
+                        <td>Ciamis</td>
+                        <td>Web Developer</td>
+                        <td>$25000</td>
+                        <td>Rizky@gmail.com</td>
+                        <td>6831925</td>
+                        <td>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/Assets/3.jpg" alt="" width="40" height="40"></td>
+                        <td>Puji Haryadi</td>
+                        <td>20</td>
+                        <td>Ciamis</td>
+                        <td>Software Engineer</td>
+                        <td>$25000</td>
+                        <td>Puji@gmail.com</td>
+                        <td>3895738</td>
+                        <td>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/Assets/4.jpg" alt="" width="40" height="40"></td>
+                        <td>M. Farhan</td>
+                        <td>19</td>
+                        <td>Ciamis</td>
+                        <td>UI/UX Designer</td>
+                        <td>$25000</td>
+                        <td>Farhan@gmail.com</td>
+                        <td>8764176</td>
+                        <td>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/Assets/5.jpg" alt="" width="40" height="40"></td>
+                        <td>Dimas Novi</td>
+                        <td>19</td>
+                        <td>Ciamis</td>
+                        <td>CyberSecurity</td>
+                        <td>$25000</td>
+                        <td>Dimas@gmail.com</td>
+                        <td>9968512</td>
+                        <td>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/Assets/6.jpg" alt="" width="40" height="40"></td>
+                        <td>Aceng Ziran</td>
+                        <td>19</td>
+                        <td>Banjar</td>
+                        <td>Database</td>
+                        <td>$25000</td>
+                        <td>Aceng@gmail.com</td>
+                        <td>1756391</td>
+                        <td>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/Assets/7.jpg" alt="" width="40" height="40"></td>
+                        <td>Ali Akbar</td>
+                        <td>19</td>
+                        <td>Panumbangan</td>
+                        <td>System Analyst</td>
+                        <td>$25000</td>
+                        <td>Ali@gmail.com</td>
+                        <td>865291</td>
+                        <td>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/Assets/8.jpg" alt="" width="40" height="40"></td>
+                        <td>Kelvin Leo</td>
+                        <td>18</td>
+                        <td>Panumbangan</td>
+                        <td>Network Engineer</td>
+                        <td>$25000</td>
+                        <td>Kelvin@gmail.com</td>
+                        <td>9429897</td>
+                        <td>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/Assets/9.jpg" alt="" width="40" height="40"></td>
+                        <td>Tazkia Hidayat</td>
+                        <td>19</td>
+                        <td>Ciamis</td>
+                        <td>IT Support Specialist</td>
+                        <td>$25000</td>
+                        <td>Tazkia@gmail.com</td>
+                        <td>4212134</td>
+                        <td>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/Assets/10.jpg" alt="" width="40" height="40"></td>
+                        <td>Emil Awaliadi</td>
+                        <td>19</td>
+                        <td>Indihiang</td>
+                        <td>Cloud Architect</td>
+                        <td>$25000</td>
+                        <td>Emil@gmail.com</td>
+                        <td>8916282</td>
+                        <td>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-regular fa-pen-to-square"></i></button>
+                            <button><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+    
+            </table>
+
+            <footer>
+                <span class="showEntries">Menampilkan 1 hingga 10 dari 50 Data</span>
+                <div class="pagination">
+                    <button>Prev</button>
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>Next</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- MAIN CONTENT -->
+
+</body>
+<script src="/JS/sidebar.js"></script>
+</html>

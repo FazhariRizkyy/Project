@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main | Dashboard</title>
+    <link rel="stylesheet" href="/CSS/dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <span>ADMIN DASHBOARD</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="dashboard.html">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">DASHBOARD</span>
+                </a>
+            </li>
+            <li>
+                <a href="product.html">
+                    <i class="bx bx-shopping-bag"></i>
+                    <span class="nav-item">Produk</span>
+                </a>
+            </li>
+            <li>
+                <a href="orders.html">
+                    <i class="bx bx-food-menu"></i>
+                    <span class="nav-item">Pesanan</span>
+                </a>
+            </li>
+            <li>
+                <a href="employee.html">
+                    <i class='bx bx-user'></i>
+                    <span class="nav-item">Karyawan</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html">
+                    <i class="bx bx-cog"></i>
+                    <span class="nav-item">Setting</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="logout-btn">
+                    <i class="bx bx-log-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a>                
+            </li>
+        </ul>
+    </div>
+    <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+    <div class="main-content">
+        <div class="home-section">
+            <nav>
+                <div class="sidebar-button">
+                    <span class="dashboard" style="font-weight: 700">UpgradeSkill</span>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search...." />
+                    <i class="bx bx-search"></i>
+                </div>
+                <div class="profile-details">
+                    <img src="/Assets/User.png" />
+                    <span class="admin_name">ADMIN-1</span>
+                </div>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">1217</div>
+                        <div class="card-name">Member Aktif</div>
+                        <div class="text">Naik dari Minggu Lalu</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">21</div>
+                        <div class="card-name">Mentor</div>
+                        <div class="text">Dari 1 Bulan Lalu</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">247</div>
+                        <div class="card-name">Karyawan</div>
+                        <div class="text">Dari 2 Bulan Lalu</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">Rp.17.851.000</div>
+                        <div class="card-name">Pendapatan</div>
+                        <div class="text">Naik 2 Bulan Lalu</div>
+                        
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-money-bills"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h2>PENDAPATAN ( 7 Bulan Terakhir )</h2>
+                    <canvas id="lineChart"></canvas>
+                </div>
+                <div class="chart" id="doughnut-chart">
+                    <h2>Karyawan</h2>
+                    <canvas id="doughnut"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTENT -->
+     
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const preloader = document.querySelector('.preloader');
+        const logoutBtn = document.getElementById('logout-btn');
+        logoutBtn.addEventListener('click', function (e) {
+            preloader.style.display = 'flex';
+            setTimeout(() => {
+                window.location.href = 'login.html';
+            }, 500);
+            e.preventDefault();
+        });
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="/JS/chart1.js"></script>
+<script src="/JS/chart2.js"></script>
+<script src="/JS/sidebar.js"></script>
+
+</html>

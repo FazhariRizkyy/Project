@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesanan | Dashboard</title>
+  <link rel="stylesheet" href="/CSS/orders.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="top">
+      <div class="logo">
+        <span>ADMIN DASHBOARD</span>
+      </div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <ul>
+      <li>
+        <a href="dashboard.html">
+          <i class="bx bxs-grid-alt"></i>
+          <span class="nav-item">DASHBOARD</span>
+        </a>
+      </li>
+      <li>
+        <a href="product.html">
+          <i class="bx bx-shopping-bag"></i>
+          <span class="nav-item">Produk</span>
+        </a>
+      </li>
+      <li>
+        <a href="orders.html">
+          <i class="bx bx-food-menu"></i>
+          <span class="nav-item">Pesanan</span>
+        </a>
+      </li>
+      <li>
+        <a href="employee.html">
+          <i class="bx bx-user"></i>
+          <span class="nav-item">Karyawan</span>
+        </a>
+      </li>
+      <li>
+        <a href="setting.html">
+          <i class="bx bx-cog"></i>
+          <span class="nav-item">Setting</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-log-out"></i>
+          <span class="nav-item">Logout</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- SIDEBAR -->
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <section class="home-section">
+      <!-- NAVBAR -->
+      <nav>
+        <div class="sidebar-button">
+          <span class="dashboard" style="font-weight: 700">UpgradeSkill</span>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search...." />
+          <i class="bx bx-search"></i>
+        </div>
+        <div class="profile-details">
+          <img src="/Assets/User.png" />
+          <span class="admin_name">ADMIN-1</span>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+       
+      <div class="home-content">
+        <div class="overview-boxes">
+          <div class="box">
+            <div class="left-side">
+              <div class="box_topic">Kursus Dibeli</div>
+              <div class="number">112 Kursus</div>
+              <div class="indicator">
+                <i class="bx bx-up-arrow-alt"></i>
+                <span class="text">Naik Dari Minggu Lalu</span>
+              </div>
+            </div>
+            <i class="bx bxs-cart-alt cart"></i>
+          </div>
+          <div class="box">
+            <div class="left-side">
+              <div class="box_topic">Kursus Disewa</div>
+              <div class="number">177 Kursus</div>
+              <div class="indicator">
+                <i class="bx bx-up-arrow-alt"></i>
+                <span class="text">Naik Dari Seminggu</span>
+              </div>
+            </div>
+            <i class="bx bxs-cart-add cart two"></i>
+          </div>
+          <div class="box">
+            <div class="left-side">
+              <div class="box_topic">Total Kursus</div>
+              <div class="number">21 Kursus</div>
+              <div class="indicator">
+                <i class="bx bx-up-arrow-alt"></i>
+                <span class="text">Dari Bulan Lalu</span>
+              </div>
+            </div>
+            <i class='bx bx-book cart three'></i>
+          </div>
+          <div class="box">
+            <div class="left-side">
+              <div class="box_topic">Pendapatan</div>
+              <div class="number">Rp.6.877.000</div>
+              <div class="indicator">
+                <i class="bx bx-up-arrow-alt"></i>
+                <span class="text">Naik Dari Minggu Lalu</span>
+              </div>
+            </div>
+            <i class="bx bxs-cart-alt cart"></i>
+          </div>
+        </div>
+
+        <div class="sales-boxes">
+          <div class="recent-sale box">
+            <div class="title">Aktivitas Pesanan</div><br>
+            <div class="sales-detail">
+              <table>
+                <ul class="details">
+                  <li class="topic">Tanggal</li>
+                  <li>02 Jan 2023</li>
+                  <li>02 Jan 2023</li>
+                  <li>02 Jan 2023</li>
+                  <li>02 Jan 2023</li>
+                  <li>02 Jan 2023</li>
+                  <li>02 Jan 2023</li>
+                  <li>02 Jan 2023</li>
+                  <li>03 Jan 2023</li>
+                  <li>03 Jan 2023</li>
+                  <li>03 Jan 2023</li>
+                  <li>03 Jan 2023</li>
+                  <li>04 Jan 2023</li>
+                </ul>
+                <ul class="details">
+                  <li class="topic">Nama</li>
+                  <li>Lionel Messi</li>
+                  <li>Cristiano Ronaldo</li>
+                  <li>Kylian Mbappe</li>
+                  <li>Toni Kross</li>
+                  <li>Luis Figo</li>
+                  <li>Alexander Arnold</li>
+                  <li>Kevin De Bruyne</li>
+                  <li>Theo Hernandes</li>
+                  <li>Pirlo</li>
+                  <li>Virgil van Dijk</li>
+                  <li>Rooney</li>
+                  <li>Buffon</li>
+                </ul>
+                <ul class="details">
+                  <li class="topic">Pembayaran</li>
+                  <li>Paypal</li>
+                  <li>Paypal</li>
+                  <li>VISA</li>
+                  <li>AliPay</li>
+                  <li>BCA Mobile</li>
+                  <li>Dana</li>
+                  <li>Paypal</li>
+                  <li>Gopay</li>
+                  <li>AliPay</li>
+                  <li>Gopay</li>
+                  <li>Dana</li>
+                  <li>VISA</li>
+                </ul>
+                <ul class="details">
+                  <li class="topic">Tipe Kursus</li>
+                  <li>Web Developer</li>
+                  <li>React.Js</li>
+                  <li>Konsep OOP Javascript</li>
+                  <li>VueJS</li>
+                  <li>PostgreSQL</li>
+                  <li>Laravel HTTP Client</li>
+                  <li>Web Developer</li>
+                  <li>CSS Fundamental</li>
+                  <li>Ms.Office</li>
+                  <li>Ms.Office</li>
+                  <li>Algoritma Pemrograman</li>
+                  <li>Ms.Office</li>
+                </ul>
+                <ul class="details">
+                  <li class="topic">Total</li>
+                  <li>Rp.500.000,00</li>
+                  <li>Rp.100.000,00</li>
+                  <li>Rp.150.000,00</li>
+                  <li>Rp.90.000,00</li>
+                  <li>Rp.38.000,00</li>
+                  <li>Rp.43.000,00</li>
+                  <li>Rp.100.000,00</li>
+                  <li>Rp.150.000,00</li>
+                  <li>Rp.420.000,00</li>
+                  <li>Rp.200.000,00</li>
+                  <li>Rp.200.000,00</li>
+                  <li>Rp.420.000,00</li>
+
+                </ul>
+              </table>
+            </div><br>
+            <div class="button">
+              <a>See All</a>
+            </div>
+          </div>
+
+          <div class="top-sales box">
+            <div class="title">Kursus Terlaris</div><br>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="/Assets/excel-word-powerpoint.png" />
+                  <span class="product_name">Ms.Office</span>
+                </a>
+                <span class="price">Terjual 539</span>
+              </li><br>
+              <li>
+                <a href="#">
+                  <img src="/Assets/Web Developer2.png" />
+                  <span class="product_name">Web Developer</span>
+                </a>
+                <span class="price">Terjual 410</span>
+              </li><br>
+              <li>
+                <a href="#">
+                  <img src="/Assets/mysql.png" />
+                  <span class="product_name">MySQL Database</span>
+                </a>
+                <span class="price">Terjual 371</span>
+              </li><br>
+              <li>
+                <a href="#">
+                  <img src="/Assets/js.png" />
+                  <span class="product_name">Javascript Fundamental</span>
+                </a>
+                <span class="price">Terjual 219</span>
+              </li><br>
+              <li>
+                <a href="#">
+                  <img src="/Assets/cybersecurity.jpg" />
+                  <span class="product_name">Cyber Security</span>
+                </a>
+                <span class="price">Terjual 73</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- MAIN CONTENT -->
+
+</body>
+<script src="/JS/sidebar.js"></script>
+
+</html>

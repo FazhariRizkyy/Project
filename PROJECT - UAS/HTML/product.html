@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk | Dashboard</title>
+    <link rel="stylesheet" href="/CSS/product.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <span>ADMIN DASHBOARD</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="dashboard.html">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">DASHBOARD</span>
+                </a>
+            </li>
+            <li>
+                <a href="product.html">
+                    <i class="bx bx-shopping-bag"></i>
+                    <span class="nav-item">Produk</span>
+                </a>
+            </li>
+            <li>
+                <a href="orders.html">
+                    <i class="bx bx-food-menu"></i>
+                    <span class="nav-item">Pesanan</span>
+                </a>
+            </li>
+            <li>
+                <a href="employee.html">
+                    <i class='bx bx-user'></i>
+                    <span class="nav-item">Karyawan</span>
+                </a>
+            </li>
+            <li>
+                <a href="setting.html">
+                    <i class="bx bx-cog"></i>
+                    <span class="nav-item">Setting</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-log-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- SIDEBAR -->
+
+    <div class="main-content">
+        <div class="container">
+            <h1 class="heading">Online Course by UpgradeSkill</h1>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search for Course...">
+            <div class="box-container">
+                <div class="box" data-title="HTML 5 Fundamental">
+                    <h3>HTML 5 Fundamental</h3>
+                    <img src="/Assets/html.png">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 150.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 50.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+        
+                <div class="box" data-title="CSS Fundamental">
+                    <h3>CSS Fundamental</h3>
+                    <img src="/Assets/css.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 150.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 50.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+        
+                <div class="box" data-title="JavaScript Fundamental">
+                    <h3>JavaScript Fundamental</h3>
+                    <img src="/Assets/js.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 300.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 80.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+        
+                <div class="box" data-title="Web Developer">
+                    <h3>Web Developer</h3>
+                    <img src="/Assets/Web Developer2.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 500.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 100.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+        
+                <div class="box" data-title="Cyber Security">
+                    <h3>Cyber Security</h3>
+                    <img src="/Assets/cybersecurity.jpg" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 750.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 270.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+        
+                <div class="box" data-title="NodeJS">
+                    <h3>NodeJS</h3>
+                    <img src="/Assets/nodejs.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 300.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 80.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="Ms.Office">
+                    <h3>Ms.Office</h3>
+                    <img src="/Assets/excel-word-powerpoint.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 420.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 200.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="JAVA OOP">
+                    <h3>JAVA OOP</h3>
+                    <img src="/Assets/java.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 300.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 100.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="Algoritma Pemrograman">
+                    <h3>Algoritma Pemrograman</h3>
+                    <img src="/Assets/algorithm.jpg" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 200.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 50.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="Laravel HTPP Client">
+                    <h3>Laravel HTTP Client</h3>
+                    <img src="/Assets/laravel.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 100.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 43.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="MySQL Database">
+                    <h3>MySQL Database</h3>
+                    <img src="/Assets/mysql.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 400.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 200.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="PHP Dasar">
+                    <h3>PHP Dasar</h3>
+                    <img src="/Assets/php.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 200.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 78.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="Data Scientist">
+                    <h3>Data Scientist</h3>
+                    <img src="/Assets/data-scientist.svg" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 300.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 180.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="React.Js">
+                    <h3>React.Js</h3>
+                    <img src="/Assets/react.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 275.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 100.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="PostgreSQL">
+                    <h3>PostgreSQL</h3>
+                    <img src="/Assets/postgre.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 100.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 38.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="Framework">
+                    <h3>Bootstrap</h3>
+                    <img src="/Assets/pngegg.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 150.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 45.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="VueJs">
+                    <h3>VueJs</h3>
+                    <img src="/Assets/vue.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 200.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 90.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="JavaScript">
+                    <h3>Konsep OOP JavaScript</h3>
+                    <img src="/Assets/js.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 150.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 40.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="Framework Laravel Dasar">
+                    <h3>Framework Laravel Dasar</h3>
+                    <img src="/Assets/laravel.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 300.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 100.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="SQL">
+                    <h3>MongoDB</h3>
+                    <img src="/Assets/mongodb.png" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 300.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 94.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+
+                <div class="box" data-title="Belajar Terminal/CMD">
+                    <h3>Belajar Terminal/CMD</h3>
+                    <img src="/Assets/CMD.jpg" alt="">
+                    <p style="margin-top: 15px;">Beli Kursus <b>Rp. 50.000,00</b></p>
+                    <p>Sewa Kursus <b>Rp. 28.000,00/Bulan</b></p>
+                    <a href="#" class="btn">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+</body>
+<script>
+    document.getElementById('searchInput').addEventListener('input', function() {
+        let filter = this.value.toLowerCase();
+        let boxes = document.getElementsByClassName('box');
+        Array.from(boxes).forEach(function(box) {
+            let title = box.getAttribute('data-title').toLowerCase();
+            if (title.includes(filter)) {
+                box.classList.remove('hidden');
+            } else {
+                box.classList.add('hidden');
+            }
+        });
+    });
+</script>
+<script src="/JS/sidebar.js"></script>
+</html>

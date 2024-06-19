@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/signin.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>REGISTER</title>
+    <style>
+        .popups {
+            display: none;
+            width: 400px;
+            background: #fff;
+            border-radius: 7px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #333;
+        }
+
+        .popups img {
+            width: 100px;
+            margin-top: -50px;
+            border: 50%;
+        }
+
+        .popups h2 {
+            font-size: 28px;
+            font-weight: 500;
+            margin: 30px 0 10px;
+        }
+
+        .popups button {
+            width: 100%;
+            margin-top: 50px;
+            padding: 10px 0;
+            background: #6fd469;
+            color: #fff;
+            border: 0;
+            outline: none;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <img src="/Assets/background.jpg" alt="login image" class="login__img">
+        <form class="login__form">
+            <div class="login__title">
+                <span>SIGN UP</span>
+            </div>
+            <div class="login__content">
+                <div class="login__box">
+                    <i class="ri-user-3-line login__icon"></i>
+                    <div class="login__box-input">
+                        <input type="email" required class="login__input" id="inputName" placeholder=" ">
+                        <label for="inputName" class="login__label">Name</label>
+                    </div>
+                </div>
+
+                <div class="login__box">
+                    <i class="ri-user-3-line login__icon"></i>
+                    <div class="login__box-input">
+                        <input type="email" required class="login__input" id="inputEmail" placeholder=" ">
+                        <label for="inputEmail" class="login__label">Email</label>
+                    </div>
+                </div>
+
+                <div class="login__box">
+                    <i class="ri-lock-2-line login__icon"></i>
+                    <div class="login__box-input">
+                        <input type="password" required class="login__input" id="inputPassword" placeholder=" ">
+                        <label for="inputPassword" class="login__label">Password</label>
+                    </div>
+                </div>
+
+                <div class="login__box">
+                    <i class="ri-lock-2-line login__icon"></i>
+                    <div class="login__box-input">
+                        <input type="password" required class="login__input" id="confrimPassword" placeholder=" ">
+                        <label for="confrimPassword" class="login__label">Confirm Password</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="login__button" id="openPopup">REGISTER</button>
+            <p class="para-2">
+                Have an account? <a href="login.html">Sign Up Here</a>
+            </p>
+        </form>
+
+        <div id="popup" class="popups">
+            <div class="popup-content">
+                <img src="/Assets/404-tick.png">
+                <h2>Registari Berhasil!</h2>
+                <p>Terimakasih telah melakukan Registrasi
+                    Kami telah mengirimkan email konfirmasi kepada :
+                <h3>fazhari@yahoo.co.id</h3>
+                </p>
+                <button type="button" class="close">OK</button>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#openPopup").click(function () {
+                $("#popup").fadeIn();
+            });
+
+            $(".close").click(function () {
+                $("#popup").fadeOut();
+            });
+
+            $(window).click(function (event) {
+                if ($(event.target).is("#popup")) {
+                    $("#popup").fadeOut();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
